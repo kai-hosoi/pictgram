@@ -23,6 +23,16 @@
             <p class="topic-text">
               <%= topic.description %>
             </p>
+            <% #Rails 08 確認テスト %>
+            <h3 class="topic-author">
+              <%= "コメント" %>
+              <% #コメント投稿機能 %>
+              <%= form_for [@post, @comment] do |f| %>
+                <%= f.text_field :content %>
+                <br>
+                <%= f.submit 'コメントする' %>
+              <% end %>
+            </h3>
           </div>
         </div>
       </div>
