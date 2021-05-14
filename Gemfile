@@ -45,6 +45,9 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
+  
+   # 追加
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -81,3 +84,5 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'bcrypt'
 gem "carrierwave"
+
+gem 'fog-aws'
